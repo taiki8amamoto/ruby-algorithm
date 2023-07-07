@@ -1,32 +1,15 @@
 # 以下に線形探索法を行う関数を定義してください
 def linear_search(numbers,value)
   # この部分を記述してください
-    if value == numbers[0]
-      puts 0
-    elsif value == numbers[1]
-      puts 1
-    elsif value == numbers[2]
-      puts 2
-    elsif value == numbers[3]
-      puts 3
-    elsif value == numbers[4]
-      puts 4
-    elsif value == numbers[5]
-      puts 5
-    elsif value == numbers[6]
-      puts 6
-    elsif value == numbers[7]
-      puts 7
-    elsif value == numbers[8]
-      puts 8
-    elsif value == numbers[9]
-      puts 9
-    elsif value == numbers[10]
-      puts 10
-    else
-      puts "None"
+  i = 0
+  while i < numbers.length
+    if value == numbers[i]
+      return i
     end
+    i += 1
   end
+  "None"
+end
 
 # 「探したい数字」が含まれている配列
 numbers = [1, 3, 5, 11, 12, 13, 17, 22, 25, 28]
